@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+        	android:checked="true"
+        	android:icon="@drawable/ic_watson_default"
+            android:id="@+id/nav_first_fragment"
+            android:title="Watson Chat" />
+        <item
+        	android:icon="@drawable/ic_action_chat"
+            android:id="@+id/nav_second_fragment"
+            android:title="Live Chat" />
+        <item
+        	android:icon="@drawable/ic_action_settings"
+            android:id="@+id/nav_third_fragment"
+            android:title="Settings" />
+        <item
+        	android:icon="@drawable/ic_action_about"
+            android:id="@+id/nav_fourth_fragment"
+            android:title="About" />
+
+    </group>
+</menu>

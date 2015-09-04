@@ -1,0 +1,23 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AskXhacker", "AskXhacker\AskXhacker.csproj", "{DBBC34F0-5EB9-4C93-895D-D1CF1D646BB5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AskXhacker.Droid", "AskXhacker.Droid\AskXhacker.Droid.csproj", "{2F21B5A6-A8CC-4224-BEBA-4914FD235C1B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2F21B5A6-A8CC-4224-BEBA-4914FD235C1B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2F21B5A6-A8CC-4224-BEBA-4914FD235C1B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2F21B5A6-A8CC-4224-BEBA-4914FD235C1B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2F21B5A6-A8CC-4224-BEBA-4914FD235C1B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DBBC34F0-5EB9-4C93-895D-D1CF1D646BB5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DBBC34F0-5EB9-4C93-895D-D1CF1D646BB5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DBBC34F0-5EB9-4C93-895D-D1CF1D646BB5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DBBC34F0-5EB9-4C93-895D-D1CF1D646BB5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

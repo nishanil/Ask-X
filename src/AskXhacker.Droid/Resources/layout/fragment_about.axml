@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_marginRight="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="8dp"
+            android:paddingRight="16dp"
+            android:paddingLeft="16dp"
+            android:gravity="center"
+            android:background="@drawable/bg_box">
+            <ImageView
+                android:id="@+id/about_logo"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/Icon"
+                android:scaleType="fitCenter" />
+            <TextView
+                android:id="@+id/about_app_name"
+                android:layout_below="@id/about_logo"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:gravity="center"
+                android:text="ASK X" />
+            <TextView
+                android:id="@+id/about_version"
+                android:layout_below="@id/about_app_name"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:textColor="#000000"
+                android:textSize="10sp"
+                android:gravity="center"
+                android:text="[version]" />
+            <TextView
+                android:id="@+id/about_text"
+                android:layout_below="@id/about_version"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:textColor="#000000"
+                android:textSize="14sp"
+                android:padding="4dp"
+                android:gravity="center"
+                android:text="Ask X is a help chat app built for XHackNight." />
+        </RelativeLayout>
+        <TextView
+            android:id="@+id/about_group"
+            android:paddingLeft="16dp"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:textSize="12sp"
+            android:text="GROUP:" />
+        <RelativeLayout
+            android:layout_marginRight="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="8dp"
+            android:paddingRight="16dp"
+            android:paddingLeft="16dp"
+            android:gravity="center"
+            android:background="@drawable/bg_box">
+            <ImageView
+                android:layout_centerHorizontal="true"
+                android:id="@+id/xhackers_photo"
+                android:layout_width="100dp"
+                android:layout_height="69dp"
+                android:src="@drawable/XHackers_logo"
+                android:scaleType="fitCenter" />
+            <TextView
+                android:id="@+id/about_xhackers_oneline"
+                android:layout_below="@id/xhackers_photo"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:textColor="#000000"
+                android:textSize="8sp"
+                android:gravity="center"
+                android:text="a global community of C# and Xamarin lovers!" />
+            <TextView
+                android:id="@+id/about_xhackers_desc"
+                android:layout_below="@id/about_xhackers_oneline"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:textColor="#000000"
+                android:padding="8dp"
+                android:textSize="12sp"
+                android:gravity="center"
+                android:text="@string/txtXhackersDesc" />
+        </RelativeLayout>
+        <TextView
+            android:id="@+id/about_developers"
+            android:paddingLeft="16dp"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:textSize="12sp"
+            android:text="DEVELOPERS:" />
+        <RelativeLayout
+            android:layout_marginRight="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="8dp"
+            android:paddingRight="16dp"
+            android:paddingLeft="16dp"
+            android:gravity="center"
+            android:background="@drawable/bg_box">
+            <askxhacker.CircleImageView
+                android:layout_marginLeft="@dimen/keyline_margin"
+                android:id="@+id/nish_photo"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/nish"
+                android:scaleType="fitCenter" />
+            <TextView
+                android:id="@+id/about_nish_name"
+                android:layout_below="@id/about_nish_name"
+                android:layout_toRightOf="@id/nish_photo"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:textColor="#000000"
+                android:textSize="12sp"
+                android:layout_marginLeft="10dp"
+                android:text="Nish Anil (Client Apps)" />
+            <TextView
+                android:id="@+id/about_nish_twitter"
+                android:layout_below="@id/about_nish_name"
+                android:layout_toRightOf="@id/nish_photo"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:textColor="#000000"
+                android:textSize="12sp"
+                android:layout_marginLeft="10dp"
+                android:text="@string/txtnish" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_marginRight="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="8dp"
+            android:paddingRight="16dp"
+            android:paddingLeft="16dp"
+            android:gravity="center"
+            android:background="@drawable/bg_box">
+            <askxhacker.CircleImageView
+                android:layout_marginLeft="@dimen/keyline_margin"
+                android:id="@+id/ajay_photo"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/ajay"
+                android:scaleType="fitCenter" />
+            <TextView
+                android:id="@+id/about_ajay_name"
+                android:layout_below="@id/about_nish_name"
+                android:layout_toRightOf="@id/ajay_photo"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:textColor="#000000"
+                android:textSize="12sp"
+                android:layout_marginLeft="10dp"
+                android:text="Ajay Chebbi (Watson Dialog Service)" />
+            <TextView
+                android:id="@+id/about_ajay_twitter"
+                android:layout_below="@id/about_ajay_name"
+                android:layout_toRightOf="@id/ajay_photo"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:textColor="#000000"
+                android:textSize="12sp"
+                android:layout_marginLeft="10dp"
+                android:text="@string/txtajay" />
+        </RelativeLayout>
+        <TextView
+            android:id="@+id/about_developers"
+            android:paddingLeft="16dp"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:textSize="12sp"
+            android:text="BUILT WITH:" />
+        <RelativeLayout
+            android:layout_marginRight="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="8dp"
+            android:paddingRight="16dp"
+            android:paddingLeft="16dp"
+            android:gravity="center"
+            android:background="@drawable/bg_box">
+            <TextView
+                android:id="@+id/about_xam"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:textColor="#000000"
+                android:textSize="12sp"
+                android:layout_marginLeft="10dp"
+                android:text="@string/txtaboutxam" />
+            <TextView
+                android:id="@+id/about_ibm"
+                android:layout_below="@+id/about_xam"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:textColor="#000000"
+                android:textSize="12sp"
+                android:layout_marginLeft="10dp"
+                android:text="@string/txtaboutibm" />
+            <TextView
+                android:id="@+id/about_pcl"
+                android:layout_below="@+id/about_ibm"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:textColor="#000000"
+                android:textSize="12sp"
+                android:layout_marginLeft="10dp"
+                android:text="@string/txtaboutpcl" />
+            <TextView
+                android:id="@+id/about_insights"
+                android:layout_below="@+id/about_pcl"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:textColor="#000000"
+                android:textSize="12sp"
+                android:layout_marginLeft="10dp"
+                android:text="@string/txtaboutinsights" />
+            <TextView
+                android:id="@+id/about_supportd"
+                android:layout_below="@+id/about_insights"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:textColor="#000000"
+                android:textSize="12sp"
+                android:layout_marginLeft="10dp"
+                android:text="@string/txtaboutsupportd" />
+            <TextView
+                android:id="@+id/about_supportv4"
+                android:layout_below="@+id/about_supportd"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:textColor="#000000"
+                android:textSize="12sp"
+                android:layout_marginLeft="10dp"
+                android:text="@string/txtaboutsupportv4" />
+            <TextView
+                android:id="@+id/about_supportv7"
+                android:layout_below="@+id/about_supportv4"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:textColor="#000000"
+                android:textSize="12sp"
+                android:layout_marginLeft="10dp"
+                android:text="@string/txtaboutsupportv7" />
+            <TextView
+                android:id="@+id/about_json"
+                android:layout_below="@+id/about_supportv7"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:textColor="#000000"
+                android:textSize="12sp"
+                android:layout_marginLeft="10dp"
+                android:text="@string/txtaboutjson" />
+            <TextView
+                android:id="@+id/about_sql"
+                android:layout_below="@+id/about_json"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:textColor="#000000"
+                android:textSize="12sp"
+                android:layout_marginLeft="10dp"
+                android:text="@string/txtaboutsql" />
+            <TextView
+                android:id="@+id/about_settings"
+                android:layout_below="@+id/about_sql"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:textColor="#000000"
+                android:textSize="12sp"
+                android:layout_marginLeft="10dp"
+                android:text="@string/txtaboutsettings" />
+            <TextView
+                android:id="@+id/about_ms"
+                android:layout_below="@+id/about_settings"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:textColor="#000000"
+                android:textSize="12sp"
+                android:layout_marginLeft="10dp"
+                android:text="@string/txtaboutms" />
+        </RelativeLayout>
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,553 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dialog xsi:noNamespaceSchemaLocation="WatsonDialogDocument_1.0.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <flow>
+        <folder label="Main">
+            <output>
+                <prompt selectionType="RANDOM">
+                    <item>I am Naganna. You can call me Mr. Nags! What is going on maccha! What you want to know?</item>
+                </prompt>
+             </output>
+			 <getUserInput id="not found">
+				<search ref="Live Content"></search>
+				<default>
+					<output>
+						<prompt selectionType="RANDOM">
+							<item>Cannat be able to understand.Please mind that language!.</item>
+							<item>I told no once... please tell again.</item>
+							<item>Yenu maccha. Correct type maadi.</item>
+							<item>Are you Rajni Sir or what! Type like normal person.</item>
+						</prompt>
+					</output>
+				</default>
+			</getUserInput>
+	</folder>
+		<folder label="Library" id="Library">
+			<folder label="Live Content" id="Live Content">
+				<!-- Version -->
+				<input>
+					<grammar>
+						<item>version</item>
+					</grammar>
+					<output>
+						<prompt selectionType="RANDOM">
+							<item>Nags version 2.0</item>
+						</prompt>
+					</output>
+				</input>
+				<input>
+			
+		<!-- Filter bad words-->
+				<grammar>
+					<item>* fuck *</item>
+					<item>$ fuck</item>
+					<item>* shit *</item>
+					<item>$ shit</item>
+					<item>* rascal *</item>
+					<item>* bitch *</item>
+					<item>* bastard *</item>
+					<item>* idiot *</item>
+					<item>* shut up *</item>
+					
+					<item>$ rascal</item>
+					<item>$ bitch</item>
+					<item>$ bastard</item>
+					<item>$ idiot</item>
+					<item>$ shut up</item>
+				</grammar>
+				<output>
+					<prompt selectionType="RANDOM">
+						<item>Your house is wonly as clean as your dustbin!</item>
+						<item>You hear about our PM Sirs Swach Bharat? Eh?</item>
+						<item>Maccha, Benguluru gutters are cleaner maccha!</item>
+						<item>Guruve. You must gargle with salt water now. Go.</item>
+					</prompt>
+				</output>
+			</input>
+			<!-- help -->
+			<input>
+				<grammar>
+					<item>help</item>
+					<item>help me</item>
+					<item>I need help</item>
+					<item>I want help</item>
+				</grammar>
+				<output>
+					<prompt selectionType="RANDOM">
+						<item>I help you with following words: IBM, Food, direction, location, agenda, Xamarin Installation
+						</item>
+					</prompt>
+				</output>
+			</input>
+			<!-- direction, location -->
+			<input>
+				<grammar>
+					<item>location</item>
+					<item>where is *</item>
+					<item>direction</item>
+					<item>directions</item>
+				</grammar>
+				<output>
+					<prompt selectionType="RANDOM">
+						<item>You know that Forum na.. just apposit that maccha IKP-EDEN. Back of that old gaadi shap. https://goo.gl/r61OyN 
+						</item>
+					</prompt>
+				</output>
+			</input>
+			<!-- Agenda -->
+			<input>
+				<grammar>
+					<item>What is the agenda?</item>
+					<item>$ What is the agenda?</item>
+					<item>$ list of talks</item>
+					<item>Who * are * speaking</item>
+					<item>Who * are * speakers</item>
+					<item>Who * are * talking</item>
+					<item>$ What do we do?</item>
+					<item>* timings *</item>
+				</grammar>
+				<output>
+					<prompt selectionType="RANDOM">
+						<item>Agenda you want.. you will get it.  9:30 AM - you start and listen to people talking verry fandu stuff.
+							Introduction to IBM Bluemix services. 
+							Introduction to Xamarin platform and Xamarin.
+							Code samples walkthrough.
+							Revealing the challenges for Hackathon.
+							Every 3 hours - some fun stuff.. majja maadi!
+						</item>
+					</prompt>
+				</output>
+			</input>
+			<!-- Food -->
+			<input>
+				<grammar>
+					<item>What is * Food arrangement?</item>
+					<item>$ food</item>
+					<item>$ food *</item>
+				</grammar>
+				<output>
+					<prompt selectionType="RANDOM">
+						<item>Masaladosa, ravadosa, khara bath, kesri bath, bonda, idli, vade, uppi-2. All free!!</item>
+						<item>Temple give free prasadam maccha. You also get free food here!</item>
+						<item>There is free wifi; 2G/3G - you pay; FoodG is free!!</item>
+					</prompt>
+				</output>
+			</input>
+			<!-- Tech Experts -->
+			<input>
+				<grammar>
+					<item>* help * IBM *</item>
+					<item>* help * IBM</item>
+					<item>$ help IBM</item>
+					<item>* IBM * expert *</item>
+					<item>* IBM * expert</item>
+					<item>$ IBM</item>
+				</grammar>
+				<output>
+					<prompt selectionType="RANDOM">
+						<item>Contact so called expert Mr Ajay</item>
+						<item>Contact rowdy Mr.Vidyasagar. He thinks he is better than any one</item>
+						<item>Talk to the smart fellow next to you no... </item>
+					</prompt>
+				</output>
+			</input>
+			<input>
+				<grammar>
+					<item>* help * Xamarin *</item>
+					<item>* help * Xamarin</item>
+					<item>$ help Xamarin</item>
+					<item>* Xamarin * expert *</item>
+					<item>* Xamarin * expert</item>
+					<item>$ Xamarin</item>
+				</grammar>
+				<output>
+					<prompt selectionType="RANDOM">
+						<item>First pronounce correctly maccha - it is naat ex-a-ma-rin. It is za-ma-rin .</item>
+						<item>Contact so called expert Mr Nish. Better be careful - he might just answer the question - wokay?</item>
+						<item>Contact rowdy Mr. Vidyasagar. He thinks he is better than any one.</item>
+						<item>Talk to the fellow next to you no.. </item>
+					</prompt>
+				</output>
+			</input>
+			<!-- What is -->
+			<input>
+				<grammar>
+					<item>What * Xamarin</item>
+				</grammar>
+				<output>
+					<prompt selectionType="RANDOM">
+						<item>Xamarin is unique in the Mobile Development space by offering a single language – C#, class library, and runtime that works across all three mobile platforms of 
+						iOS, Android, and Windows Phone, while still compiling native (non-interpreted) applications that are performant enough even for demanding games. Read more: http://developer.xamarin.com/guides/cross-platform/getting_started/introduction_to_mobile_development/
+						
+</item>
+					</prompt>
+				</output>
+			</input>
+			<input>
+				<grammar>
+					<item>What * Bluemix</item>
+				</grammar>
+				<output>
+					<prompt selectionType="RANDOM">
+						<item>It is not something you drink. IBM Bluemix is a cloud platform based on Cloud Foundry open technology. You can write apps in Node.js, Python, PHP, Ruby. Or you can 
+						Just use the services like Cloudant, Watson, mobile etc. You can host Docker containers too!</item>
+					</prompt>
+				</output>
+			</input>
+			<!-- Install help -->
+			<input>
+				<grammar>
+					<item>*Install*</item>
+					<item>$ installation </item>
+				</grammar>
+				<output>
+					<prompt selectionType="RANDOM">
+						<item>You read English or what? For Xamarin go here https://gist.github.com/iAMVMac/af2f5ccd0a51ab5a86d2 . For bluemix go here https://gist.github.com/iAMVMac/f2406f834fc5ed3e8161 </item>
+					</prompt>
+				</output>
+			</input>
+			<!-- Gifts -->
+			<input>
+				<grammar>
+					<item>$ prizes</item>
+					<item>$ gifts</item>
+				</grammar>
+				<output>
+					<prompt selectionType="RANDOM">
+						<item>You go buy in Forum Mall. But you build some sakkath stuff then you get: Apple iPad, Nexus One, Fitbit Charge, and lot of small useless things!! 
+						Very much Thanks to : IBM, Xamarin, Pluralsight, JetBrains </item>
+					</prompt>
+				</output>
+			</input>
+			<!-- Sponsors -->
+			<input>
+				<grammar>
+					<item>$ Sponsors</item>
+				</grammar>
+				<output>
+					<prompt selectionType="RANDOM">
+						<item>What you think who paid? IBM, Xamarin, Pluralsight, JetBrains helped you know!</item>
+					</prompt>
+				</output>
+			</input>			
+			<!-- General info -->
+			<input>
+				<grammar>
+					<item>What is Xhackers?</item>
+					<item>$ What is Xhackers?</item>
+				</grammar>
+				<output>
+					<prompt selectionType="RANDOM">
+						<item>Xhackers is a global developer community of C# and Xamarin! Visit: Xhackers.co/xhacknight Join: http://meetup.com/XHackers/ and Facebook: https://www.facebook.com/groups/xhackersco/
+						</item>
+						
+					</prompt>
+				</output>
+			</input>
+			<!-- Xhacknight -->
+			<input>
+				<grammar>
+					<item>What is * Xhacknight?</item>
+					<item>What is * hacknight?</item>
+				</grammar>
+				<output>
+					<prompt selectionType="RANDOM">
+						<item>Xhacknight means that you sit all day - all night - and hack a app with Bluemix and Xamarin. No sleeping and all that business - wokay?</item>
+					</prompt>
+				</output>
+			</input>
+			<!-- Pre requisites -->
+			<input>
+				<grammar>
+					<item>What do I need?</item>
+					<item>What * I get</item>
+				</grammar>
+				<output>
+					<prompt selectionType="RANDOM">
+						<item>Firstly - your head. Then Install Xamarin: https://xamarin.com/download . Also regsiter with Bluemix: https://ibm.biz/bluemixapp</item>
+					</prompt>
+				</output>
+			</input>
+	
+			</folder>
+		</folder>
+		<folder label="Storage" id="Storage"></folder>
+		<folder label="Concepts" id="Concepts">
+            <concept>
+                <grammar>
+                    <item>Food</item>
+                    <item>chow</item>
+                    <item>grub</item>
+                    <item>oota</item>
+                    <item>eating</item>
+					<item>snacks</item>
+					<item>snack</item>
+                </grammar>
+            </concept>
+            <concept>
+                <grammar>
+                    <item>Type</item>
+                    <item>kind</item>
+                    <item>sort</item>
+                    <item>variety</item>
+                    <item>types</item>
+                    <item>kinds</item>
+                    <item>sorts</item>
+                    <item>varieties</item>
+                </grammar>
+            </concept>
+            <concept>
+                <grammar>
+                    <item>sure</item>
+                    <item>certain</item>
+                    <item>definite</item>
+                    <item>positive</item>
+                </grammar>
+            </concept>
+            <concept>
+                <grammar>
+                    <item>No</item>
+                    <item>absolutely not</item>
+                    <item>apparently not</item>
+                    <item>Are not</item>
+                    <item>By no means</item>
+                    <item>Certainly not</item>
+                    <item>Definitely not</item>
+                    <item>Hardly</item>
+                    <item>Heck no</item>
+                    <item>Hell no</item>
+                    <item>I suppose not</item>
+                    <item>Negative</item>
+                    <item>never </item>
+                    <item>nix  </item>
+                    <item>no no</item>
+                    <item>no no no</item>
+                    <item>No not at all</item>
+                    <item>No not really</item>
+                    <item>No thank you</item>
+                    <item>no thanks</item>
+                    <item>No way</item>
+                    <item>Non</item>
+                    <item>None</item>
+                    <item>nope</item>
+                    <item>not at all  </item>
+                    <item>not by any means</item>
+                    <item>Not completely</item>
+                    <item>Not especially</item>
+                    <item>Not particularly</item>
+                    <item>not really</item>
+                    <item>not right now</item>
+                    <item>Not that I know of</item>
+                    <item>of course not</item>
+                    <item>please no</item>
+                    <item>probably not</item>
+                    <item>nopeity-nope-nope</item>
+                    <item>n-n-n-no</item>
+                    <item>n-o</item>
+                </grammar>
+            </concept>
+            <concept description="">
+                <grammar>
+                    <item>yes</item>
+                    <item>Absolutely</item>
+                    <item>absolutely correct</item>
+                    <item>absolutely yes</item>
+                    <item>Affirmative</item>
+                    <item>affirmative yes</item>
+                    <item>Ah yes</item>
+                    <item>Apparently</item>
+                    <item>Apparently so</item>
+                    <item>As far as I know</item>
+                    <item>aye</item>
+                    <item>by all means </item>
+                    <item>certainly</item>
+                    <item>Completely</item>
+                    <item>Constantly</item>
+                    <item>Correct</item>
+                    <item>dam right</item>
+                    <item>damn right</item>
+                    <item>Definite</item>
+                    <item>Definitely</item>
+                    <item>Especially</item>
+                    <item>Evidently</item>
+                    <item>exactly</item>
+                    <item>Extremely</item>
+                    <item>For sure</item>
+                    <item>Fully</item>
+                    <item>Generally</item>
+                    <item>gladly  </item>
+                    <item>good enough</item>
+                    <item>granted</item>
+                    <item>heck yes</item>
+                    <item>Hell yes</item>
+                    <item>I believe so</item>
+                    <item>I decided yes</item>
+                    <item>I think so</item>
+                    <item>In this case</item>
+                    <item>indeed</item>
+                    <item>Ja</item>
+                    <item>Most definitely</item>
+                    <item>naturally</item>
+                    <item>of course </item>
+                    <item>Okie dokie</item>
+                    <item>Oui</item>
+                    <item>please yes</item>
+                    <item>positively</item>
+                    <item>positively yes</item>
+                    <item>precisely</item>
+                    <item>right on</item>
+                    <item>Si</item>
+                    <item>spot on</item>
+                    <item>sure thing</item>
+                    <item>surely</item>
+                    <item>Uh huh</item>
+                    <item>uh-huh</item>
+                    <item>undoubtedly</item>
+                    <item>unquestionably</item>
+                    <item>very well  </item>
+                    <item>why yes</item>
+                    <item>willingly</item>
+                    <item>without fail</item>
+                    <item>word</item>
+                    <item>yah</item>
+                    <item>yeah</item>
+                    <item>yep</item>
+                    <item>yes please</item>
+                    <item>Yes really</item>
+                    <item>Yes right</item>
+                    <item>Yes sometimes</item>
+                    <item>Yes sure</item>
+                    <item>yes yes</item>
+                    <item>yes yes yes</item>
+                    <item>Yes you</item>
+                    <item>you bet</item>
+                    <item>you got it</item>
+                    <item>yup</item>
+                    <item>yyeah</item>
+                    <item>yyep</item>
+                    <item>yyes</item>
+                    <item>yyyyyyyyyyyyyyyyesssssss</item>
+                    <item>yuup</item>
+                    <item>yuupp</item>
+                    <item>yuur</item>
+                    <item>yuuu</item>
+                    <item>yuuup</item>
+                    <item>yuuupppp</item>
+                    <item>yus</item>
+                    <item>yuperoo</item>
+                    <item>yuperz</item>
+                    <item>yupidydoda</item>
+                    <item>yupiii</item>
+                    <item>yupo</item>
+                    <item>yupp</item>
+                    <item>yuppers</item>
+                    <item>yupperz</item>
+                    <item>yuppie</item>
+                    <item>yuppp</item>
+                    <item>yuppper</item>
+                    <item>yupppers</item>
+                    <item>yupppp</item>
+                    <item>yupppppp</item>
+                    <item>yups</item>
+                    <item>yupyup</item>
+                    <item>yupz</item>
+                    <item>yupzz</item>
+                    <item>yesz</item>
+                    <item>yesyes</item>
+                    <item>yesyesyes</item>
+                    <item>yesyesyesyes</item>
+                    <item>yesyesyesyesyes</item>
+                    <item>yesyesyesyesyesyes</item>
+                    <item>yesyesyesyesyesyesyes</item>
+                    <item>yez</item>
+                    <item>yezz</item>
+                    <item>yezzir</item>
+                    <item>yha</item>
+                    <item>yipyesg</item>
+                    <item>yesh</item>
+                    <item>yeshum</item>
+                    <item>yeshums</item>
+                    <item>yesi i</item>
+                    <item>yesish</item>
+                    <item>yesit it</item>
+                    <item>yesly</item>
+                    <item>yesm</item>
+                    <item>yesn</item>
+                    <item>yesq</item>
+                    <item>yess</item>
+                    <item>yesseess</item>
+                    <item>yesshhh</item>
+                    <item>yessiere</item>
+                    <item>yessin</item>
+                    <item>yessir</item>
+                    <item>yessiree</item>
+                    <item>yessireeee</item>
+                    <item>yessm</item>
+                    <item>yesss</item>
+                    <item>yessss</item>
+                    <item>yessum</item>
+                    <item>yeper</item>
+                    <item>yeperdoodles</item>
+                    <item>yepers</item>
+                    <item>yeples</item>
+                    <item>yepo</item>
+                    <item>yepp</item>
+                    <item>yeppah</item>
+                    <item>yepper</item>
+                    <item>yeppers</item>
+                    <item>yepperz</item>
+                    <item>yeppie</item>
+                    <item>yeppo</item>
+                    <item>yeppp</item>
+                    <item>yeppppppp</item>
+                    <item>yepppppppppppppppppppppp</item>
+                    <item>yeppurs</item>
+                    <item>yeppy</item>
+                    <item>yeppz</item>
+                    <item>yeps</item>
+                    <item>yepsiree</item>
+                    <item>yepster</item>
+                    <item>yepyep</item>
+                    <item>yepyepyepyepyepyepy</item>
+                    <item>yepz</item>
+                    <item>yer</item>
+                    <item>yeess</item>
+                    <item>yeesss</item>
+                    <item>yeessss</item>
+                    <item>yeesssss</item>
+                    <item>yehh</item>
+                    <item>yehhh</item>
+                    <item>yehhhh</item>
+                    <item>yeh</item>
+                    <item>yehhhhhhhhh</item>
+                    <item>yerr</item>
+                    <item>yerrr</item>
+                    <item>yerrrr</item>
+                    <item>yeea</item>
+                    <item>yeeaaah</item>
+                    <item>yeeaah</item>
+                    <item>yeeaahh</item>
+                    <item>yeeaahhh</item>
+                    <item>yeeah</item>
+                    <item>yeeargh</item>
+                    <item>yeeeah</item>
+                    <item>yeeeeaaaaaaah</item>
+                    <item>yeeeeaaaaahhh</item>
+                    <item>yeeeeaaah</item>
+                    <item>yeeeeah</item>
+                    <item>yeeeee</item>
+                    <item>yeeeeeah</item>
+                    <item>sure</item>
+                </grammar>
+            </concept>
+            <concept>
+                <grammar>
+                    <item>I would like</item>
+                    <item>I want</item>
+                    <item>Give me</item>
+                    <item>Lets do</item>
+                    <item>I choose</item>
+                </grammar>
+            </concept>
+        </folder>
+	</flow>
+  </dialog>

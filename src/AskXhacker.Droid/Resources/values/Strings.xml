@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="app_name">Ask X</string>
+	<string name="openDrawer">Drawer Open</string>
+ <string name="closeDrawer">Drawer Closed</string>
+ <string name="txtnish"><a href="http://twitter.com/nishanil">@nishanil</a></string>
+ 
+ <string name="txtajay"><a href="http://twitter.com/ajaychebbi">@ajaychebbi</a></string>
+ <string name="txtXhackersDesc">XHackers is a group of developers passionate about iOS, Android, Windows Development in C# and Xamarin. Join us:<a href="http://xhackers.co">xhackers.co</a></string>
+<string name="txtaboutxam">&#8226; Xamarin | Xamarin.Android</string>
+<string name="txtaboutibm">&#8226; IBM Bluemix Watson\&#39;s Dialog Service</string>
+<string name="txtaboutpcl">&#8226; PCL (Shared Code)</string>
+<string name="txtaboutinsights">&#8226; Xamarin.Insights</string>
+<string name="txtaboutsupportd">&#8226; Xamarin Support Library Design</string>
+<string name="txtaboutsupportv4">&#8226; Xamarin Support Library v4</string>
+<string name="txtaboutsupportv7">&#8226; Xamarin Support Library v7 AppCompat</string>
+<string name="txtaboutjson">&#8226; Newtonsoft.Json</string>
+<string name="txtaboutsql">&#8226; SQLite-net PCL</string>
+<string name="txtaboutsettings">&#8226; Settings Plugin for Xamarin and Windows</string>
+<string name="txtaboutms">&#8226; Microsoft HTTP Client Libraries</string>
+
+
+</resources>
