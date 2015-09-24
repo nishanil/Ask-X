@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">iPhoneSimulator</Platform>
+    <ProjectTypeGuids>{FEACFBD2-3405-455C-9665-78FE426C6842};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <ProjectGuid>{055037AE-3EA5-44D5-86BA-C11E2DD675E2}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>AskXhacker.iOS</RootNamespace>
+    <IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
+    <AssemblyName>AskXhacker.iOS</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhoneSimulator' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\iPhoneSimulator\Debug</OutputPath>
+    <DefineConstants>DEBUG;ENABLE_TEST_CLOUD;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <MtouchArch>i386</MtouchArch>
+    <MtouchLink>None</MtouchLink>
+    <MtouchDebug>true</MtouchDebug>
+    <MtouchProfiling>true</MtouchProfiling>
+    <MtouchUseRefCounting>true</MtouchUseRefCounting>
+    <MtouchI18n>
+    </MtouchI18n>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhone' ">
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\iPhone\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+    <MtouchArch>ARMv7, ARM64</MtouchArch>
+    <ConsolePause>false</ConsolePause>
+    <CodesignKey>iPhone Developer</CodesignKey>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhoneSimulator' ">
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\iPhoneSimulator\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <MtouchArch>i386</MtouchArch>
+    <ConsolePause>false</ConsolePause>
+    <MtouchLink>None</MtouchLink>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhone' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\iPhone\Debug</OutputPath>
+    <DefineConstants>DEBUG;ENABLE_TEST_CLOUD;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <MtouchArch>ARMv7, ARM64</MtouchArch>
+    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+    <MtouchProfiling>true</MtouchProfiling>
+    <CodesignKey>iPhone Developer</CodesignKey>
+    <MtouchDebug>true</MtouchDebug>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="Xamarin.iOS" />
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\packages\Newtonsoft.Json.7.0.1\lib\portable-net40+sl5+wp80+win8+wpa81\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http.Primitives">
+      <HintPath>..\packages\Microsoft.Net.Http.2.2.29\lib\Xamarin.iOS10\System.Net.Http.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http.Extensions">
+      <HintPath>..\packages\Microsoft.Net.Http.2.2.29\lib\Xamarin.iOS10\System.Net.Http.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="SQLitePCL.raw">
+      <HintPath>..\packages\SQLitePCL.raw_basic.0.7.1\lib\Xamarin.iOS10\SQLitePCL.raw.dll</HintPath>
+    </Reference>
+    <Reference Include="SQLite-net">
+      <HintPath>..\packages\sqlite-net-pcl.1.0.11\lib\portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10\SQLite-net.dll</HintPath>
+    </Reference>
+    <Reference Include="Refractored.Xam.Settings">
+      <HintPath>..\packages\Xam.Plugins.Settings.1.5.2\lib\Xamarin.iOS10\Refractored.Xam.Settings.dll</HintPath>
+    </Reference>
+    <Reference Include="Refractored.Xam.Settings.Abstractions">
+      <HintPath>..\packages\Xam.Plugins.Settings.1.5.2\lib\Xamarin.iOS10\Refractored.Xam.Settings.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Insights">
+      <HintPath>..\packages\Xamarin.Insights.1.10.6\lib\Xamarin.iOS10\Xamarin.Insights.dll</HintPath>
+    </Reference>
+    <Reference Include="PLCrashReporterUnifiedBinding">
+      <HintPath>..\packages\Xamarin.Insights.1.10.6\lib\Xamarin.iOS10\PLCrashReporterUnifiedBinding.dll</HintPath>
+    </Reference>
+    <Reference Include="FlyoutNavigation">
+      <HintPath>..\Components\flyoutnavigation-1.5.1\lib\ios-unified\FlyoutNavigation.dll</HintPath>
+    </Reference>
+    <Reference Include="MonoTouch.Dialog-1" />
+    <Reference Include="JSQMessagesViewController">
+      <HintPath>..\Components\jsqmessagesviewcontroller-7.0.0\lib\ios-unified\JSQMessagesViewController.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\Contents.json" />
+    <ImageAsset Include="Resources\Images.xcassets\Menu.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Images.xcassets\Menu.imageset\ios-menu.pdf" />
+    <ImageAsset Include="Resources\Images.xcassets\default_user.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Images.xcassets\default_user.imageset\default_user.png" />
+    <ImageAsset Include="Resources\Images.xcassets\default_user.imageset\default_user%402x.png" />
+    <ImageAsset Include="Resources\Images.xcassets\default_user.imageset\default_user%403x.png" />
+    <ImageAsset Include="Resources\Images.xcassets\default_watson.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Images.xcassets\default_watson.imageset\default_watson.png" />
+    <ImageAsset Include="Resources\Images.xcassets\default_watson.imageset\default_watson%402x.png" />
+    <ImageAsset Include="Resources\Images.xcassets\default_watson.imageset\default_watson%403x.png" />
+    <ImageAsset Include="Resources\Images.xcassets\menu_watson.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Images.xcassets\menu_watson.imageset\menu_watson.pdf" />
+    <ImageAsset Include="Resources\Images.xcassets\menu_livechat.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Images.xcassets\menu_livechat.imageset\menu_livechat.pdf" />
+    <ImageAsset Include="Resources\Images.xcassets\menu_settings.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Images.xcassets\menu_settings.imageset\menu_settings.pdf" />
+    <ImageAsset Include="Resources\Images.xcassets\menu_about.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Images.xcassets\menu_about.imageset\menu_about.pdf" />
+    <ImageAsset Include="Resources\Images.xcassets\LaunchImage-1.launchimage\Contents.json" />
+  </ItemGroup>
+  <ItemGroup>
+    <InterfaceDefinition Include="Main.storyboard" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Info.plist" />
+    <None Include="Entitlements.plist" />
+    <None Include="packages.config" />
+    <None Include="PluginsHelp\SettingsReadme.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Main.cs" />
+    <Compile Include="AppDelegate.cs" />
+    <Compile Include="Theme.cs" />
+    <Compile Include="ColorHelper.cs" />
+    <Compile Include="ViewControllers\HomeNavigationController.cs" />
+    <Compile Include="ViewControllers\HomeNavigationController.designer.cs">
+      <DependentUpon>HomeNavigationController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewControllers\LiveChatViewController.cs" />
+    <Compile Include="ViewControllers\LiveChatViewController.designer.cs">
+      <DependentUpon>LiveChatViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewControllers\WatsonChatViewController.cs" />
+    <Compile Include="ViewControllers\WatsonChatViewController.designer.cs">
+      <DependentUpon>WatsonChatViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewControllers\SettingsViewController.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
+  <Import Project="..\packages\Xamarin.Insights.1.10.6\build\Xamarin.iOS10\Xamarin.Insights.targets" Condition="Exists('..\packages\Xamarin.Insights.1.10.6\build\Xamarin.iOS10\Xamarin.Insights.targets')" />
+  <Import Project="..\packages\Microsoft.Bcl.Build.1.0.21\build\Microsoft.Bcl.Build.targets" Condition="Exists('..\packages\Microsoft.Bcl.Build.1.0.21\build\Microsoft.Bcl.Build.targets')" />
+  <ItemGroup>
+    <ProjectReference Include="..\AskXhacker\AskXhacker.csproj">
+      <Project>{DBBC34F0-5EB9-4C93-895D-D1CF1D646BB5}</Project>
+      <Name>AskXhacker</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <XamarinComponentReference Include="flyoutnavigation">
+      <Version>1.5.1</Version>
+      <Visible>False</Visible>
+    </XamarinComponentReference>
+    <XamarinComponentReference Include="jsqmessagesviewcontroller">
+      <Version>7.0.0</Version>
+      <Visible>False</Visible>
+    </XamarinComponentReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="ViewControllers\" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Images.xcassets\Contents.json" />
+    <BundleResource Include="Resources\Images.xcassets\AppIcons.appiconset\Icon-29.png" />
+    <BundleResource Include="Resources\Images.xcassets\AppIcons.appiconset\Icon-29%402x.png" />
+    <BundleResource Include="Resources\Images.xcassets\AppIcons.appiconset\Icon-29%403x.png" />
+    <BundleResource Include="Resources\Images.xcassets\AppIcons.appiconset\Icon-40%402x.png" />
+    <BundleResource Include="Resources\Images.xcassets\AppIcons.appiconset\Icon-40%403x.png" />
+    <BundleResource Include="Resources\Images.xcassets\AppIcons.appiconset\Icon-60%402x.png" />
+    <BundleResource Include="Resources\Images.xcassets\AppIcons.appiconset\Icon-60%403x.png" />
+    <BundleResource Include="Resources\Images.xcassets\LaunchImage-1.launchimage\iphone_portrait_4_%401x.png" />
+    <BundleResource Include="Resources\Images.xcassets\LaunchImage-1.launchimage\iphone_portrait_4_%402x.png" />
+    <BundleResource Include="Resources\Images.xcassets\LaunchImage-1.launchimage\iphone_portrait_4_%402x-1.png" />
+    <BundleResource Include="Resources\Images.xcassets\LaunchImage-1.launchimage\iphone_portrait_5_%402x.png" />
+    <BundleResource Include="Resources\Images.xcassets\LaunchImage-1.launchimage\iphone_portrait_5_%402x-1.png" />
+    <BundleResource Include="Resources\Images.xcassets\LaunchImage-1.launchimage\iphone_portrait_6_%402x.png" />
+    <BundleResource Include="Resources\Images.xcassets\LaunchImage-1.launchimage\iphone_portrait_6p_%403x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ITunesArtwork Include="iTunesArtwork" />
+    <ITunesArtwork Include="iTunesArtwork%402x" />
+  </ItemGroup>
+</Project>
